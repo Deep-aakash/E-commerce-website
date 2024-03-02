@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.cart-container {
+    margin-top: 50px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+  }
+
+  .summary-card {
+    margin-top: 20px;
+  }
+
+.cont-image img{
+    width: 279px;
+    height: 247px;
+    object-fit: contain;
+}
+.cart-content{
+    padding: 5px 0 18px 10px;
+}
+
+.resp{
+    gap: 4rem;
+}
+
+.btnminpl{
+    background-color: #088178 !important;
+    color: white !important;
+}
+
+/* Media Query for screens up to 480px wide */
+
+@media (max-width: 480px) {
+.cart-container{
+    width: 90% !important;
+}
+.row{
+    margin-left: 0 !important;
+}
+
+.cart-content{
+    gap: 11px !important;
+}
+.cont-image{
+    text-align: center;
+}
+.txtcensm{
+    text-align: center;
+}
+
+}
+
+@media (max-width:767px ) {
+.cart-content{
+    gap: 11px !important;
+}
+}

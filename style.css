@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.main-page {
+
+  width: 100%;
+  height: 585px;
+  overflow: hidden;
+  background: linear-gradient(to right, #a6a6a6, #ffffff);
+}
+
+.slideContent {
+  margin: 0 40px;
+}
+
+.img-cont {
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 300px;
+}
+
+
+
+/* Global Styles */
+
+
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+.motto {
+  display: flex;
+  justify-content: center;
+}
+
+.motto p {
+  font-size: 21px;
+}
+
+
+
+
+
+/* Media Query for screens up to 768px wide */
+
+@media (max-width: 768px) {
+
+
+
+
+.header-1 {
+    height: 63px;
+    align-content: center;
+    background-color: #d1d5eb;
+    text-align: center;
+    margin-left: 0px !important;
+    max-width: 100%;
+}
+
+.search{
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+    justify-content: flex-start;
+}
+.left-btn {
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+    justify-content: center;
+}
+.left-btn ul {
+  justify-content:end; 
+  align-items:normal;
+  gap: 0.3rem;
+
+}
+.search .inpt input,
+.search .inpt button,
+.left-btn button {
+    max-width: 300px;
+}
+
+  .header-2 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .header-2 li {
+
+    padding: 20px 12px;
+  }
+
+  .header-2 ul {
+    padding-left: 1rem;
+    display: flex;
+  }
+}
+
+/* Media Query for screens up to 480px wide */
+
+@media (max-width: 480px) {
+#header{
+  width: 102%;
+}
+
+.productcard {
+  gap: 1.50rem !important;
+}
+
+.txt p {
+  font-weight: 400;
+  font-size: 30px !important;
+}
+
+
+.wrapper .arrow:first-child {
+  left: -8px !important;
+}
+
+
+.search {
+    margin-top: 10px !important;
+
+    text-align: left;
+}
+
+.left-btn {
+    margin-top: 10px !important;
+    text-align: left;
+    justify-content: normal;
+
+}
+
+.left-btn ul{
+  justify-content:end; 
+  align-items:normal;
+  gap: 0.3rem;
+
+}
+
+.search .inpt input,
+.search .inpt button,
+.left-btn button {
+    max-width: 300px;
+} 
+.cart-btn {
+  
+    color: black;
+    padding-top: 5px;
+
+}
+ 
+.header-1 {
+    height: 150px;
+    text-align: left;
+    align-content: center;
+    background-color: #d1d5eb;
+    ;
+}
+.search-inpt {
+    width: 241px;
+}
+
+.img-cont {
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 300px;
+}
+
+  .kingdrop {
+    padding-top: 23px !important;
+  }
+
+
+}
+
+@media (max-width: 320px) {
+.img-cont img{
+    width: 376px !important;
+}
+  .motto p {
+    font-size: 19px;
+}
+}
+
+@media (max-width: 325px) {
+  .txt p {
+    font-size: 23px !important;
+  }
+
+  .section-feature {
+    margin: 10px 10px 39px !important;
+  }
+  
+  
+    }
+
+@media (max-width: 293px) {
+
+.img-cont img {
+  width: 347px !important;
+}
+
+.section-feature {
+  margin: 10px 10px 39px !important;
+}
+
+
+  }
+
+/* slider css */
+
+#featured {
+  justify-content: center;
+  display: grid;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .arrow {
+  top: 44%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #acaaaa;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 1;
+}
+
+.wrapper .arrow:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper .arrow:first-child {
+  left: -22px;
+}
+
+.wrapper .arrow:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  height: 492px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .productcard {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.productcard, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .productcard {
+  scroll-snap-align: start;
+  height: 498px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.productcard {
+  scroll-snap-align: start;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 1.25rem;
+  display: grid;
+  width: 320px;
+  width: auto;
+}
+
+.image-cont {
+  overflow: hidden;
+  position: relative;
+  object-fit: contain;
+  object-position: center;
+  margin-inline: auto;
+  transition: opacity .1s ease-in-out;
+}
+
+
+.image-cont img:hover {
+  transform: scale(1.1);
+  transition: transform 2s;
+
+}
+
+.image-cont img:not(:hover) {
+  transform: scale(1);
+  transition: transform 2s;
+}
+
+
+.image-cont img {
+  max-width: 100%;
+}
+
+
+
+
+.product-title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 10px;
+  text-decoration: none;
+  
+}
+
+.product-title a p {
+  font-size: 14px;
+  color: #088178;
+}
+
+.available-sizes {
+  color: black;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.button {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 100px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  background: linear-gradient(to right, #088178 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  transition: all .6s ease-out;
+  display: block;
+  text-decoration: none;
+}
+
+.text:hover {
+  color: white;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.txt {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.txt p {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.section-feature {
+  display: grid;
+  margin: 10px 10px 57px;
+}
+
+/* for view all button */
+
+.outer {
+  margin: 50px 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.outer .button {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 100px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  background: linear-gradient(to right, #088178 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: white;
+}
+
+
+.container {
+  margin-top: 10px;
+}
+
+.txt {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-feature {
+  display: grid;
+}
+
+.add2cart button{
+  
+    border-radius: 10px;
+    border: 1px solid #088178;
+    padding: 6px;
+}
+.add2cart button:hover {
+    background-color: #088178;
+    color: white;
+    font-weight: 600;
+  }
+
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
